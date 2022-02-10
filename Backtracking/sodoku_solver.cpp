@@ -15,7 +15,7 @@ class Solution {
 public:
     
     vector<char>callOpt(vector<vector<char>> board, int i, int j){ //gives the available options for a particular block.
-        char c[9]={'1','2','3','4','5','6','7','8','9'};
+        char c[9]={'1','2','3','4','5','6','7','8','9'};   // eliminating these chars as i check row,column, 3*3 local block. If not cancelled include in return.
         for(int a = 0;a<9;++a){ // row
             if(board[a][j]!='.')
             c[(board[a][j]-'0')-1] = '0';
