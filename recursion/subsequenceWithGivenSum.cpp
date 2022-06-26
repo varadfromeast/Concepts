@@ -39,7 +39,7 @@ int main() {
   
     int sum = 6;
     vector<int>res;
-    subseq(a,0,res,sum,sum);
+    subseq(a,0,res,sum);
 
     return 0;
     
