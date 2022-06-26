@@ -2,7 +2,10 @@
 using namespace std;
 
 
-void subseq(vector<int>&a,vector<int>&res,int ind) {
+void subseq(vector<int>&a,vector<int>&res,int ind) { // diff bw &res and res
+                                                     // pass by ref vs pass by value is a lot when it comes to time taken.
+                                                     // pass by value is heavy bc for each call a new copy of the vector is used in the memory,
+                                                     // while, in pas by ref, the same memory location that was first assigned is used always.
     if (ind == 3) {
         for(auto i : res) {
             cout<<i<<" ";
