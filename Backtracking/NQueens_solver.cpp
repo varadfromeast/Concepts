@@ -3,7 +3,7 @@ public:
     vector<pair<int,int>>p {{-1,0},{1,0},{0,-1},{0,1},{-1,-1},{1,-1},{1,1},{-1,1}};  // all the possible moves.
     void place(int n,int row, vector<vector<int>> &b, vector<vector<vector<int>>> &res) {
         if(row == n) {
-            res.push_back(b);  // only if last row is reached, solution chess board is pushed to result.
+            res.push_back(b);  // only if last row is reached, solution chess board is pushed to result
             return;
         }
         
