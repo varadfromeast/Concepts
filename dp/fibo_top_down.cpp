@@ -1,4 +1,4 @@
-#include <bits/stdc++.h> 
+#include <bits/stdc++.h>  // tc: o(n) sc: o(n) + o(n) :: space used to maintain dp array + space used by recursion call stack
 using namespace std;
 
 int fib(int n, vector<int> &dp) {
