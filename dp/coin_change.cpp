@@ -2,7 +2,7 @@ class Solution { // Read problem statment for context
 public:
     int MX = 1e5;
     int func(int i, int amt, vector<int> &coins, vector<vector<int>> &dp) { // go from last element to 0 for base case which will be used in later approaches.
-        if(i == 0) {
+        if(i == 0) { // do not go below 0, because base case is needed for next apporaches.
             if(amt % coins[0] == 0) { // IMP base case. Treat base case as if only applying logic to a single element. 
                 return amt/coins[0]; // Number of coins possible. easy.
             }
