@@ -25,7 +25,7 @@ public:
     int coinChange(vector<int>& coins, int amount) {
         if (amount == 0)
             return 0;
-        vector<vector<int>> dp(coins.size(), vector<int>(amount+1,0));
+        vector<vector<int>> dp(coins.size(), vector<int>(amount+1,-1));
         int ans = func(coins.size()-1, amount, coins, dp);
         return ans == MX ? -1 : ans;
     }
